@@ -1,10 +1,20 @@
 // our-domain.com/
+import Head from "next/head";
+
 import { MongoClient } from "mongodb";
 import MeetupList from "../components/meetups/MeetupList";
+import { Fragment } from "react";
 require("dotenv").config();
 
 function HomePage(props) {
-  return <MeetupList meetups={props.meetups} />;
+  return (
+    <Fragment>
+      <Head>
+        <title>MeetUps</title>
+      </Head>
+      <MeetupList meetups={props.meetups} />;
+    </Fragment>
+  );
 }
 
 // export async function getServerSideProps(context) {
