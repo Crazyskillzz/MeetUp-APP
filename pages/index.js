@@ -11,6 +11,10 @@ function HomePage(props) {
     <Fragment>
       <Head>
         <title>MeetUps</title>
+        <meta
+          name="description"
+          content="Browse a huge list of higly active MeetUps all around the world!"
+        />
       </Head>
       <MeetupList meetups={props.meetups} />;
     </Fragment>
