@@ -37,3 +37,20 @@
 .header a.active {
   color: white;
 }
+
+/* This style applies when the screen width is less than 768px (typical mobile screens) */
+@media (max-width: 760px) {
+  .header a {
+    margin: auto;
+    padding-left: auto;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+    margin: 0 0 1rem -0.5rem;
+  }
+}
